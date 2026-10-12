@@ -1,0 +1,71 @@
+.container {
+    display: grid;
+    grid-template-columns: 250px 160px 160px 250px;
+    grid-template-rows: 202px 202px 202px;
+    gap: 1rem;
+    padding: 24px;
+    border-radius: 12px;
+    width: max-content;
+}
+
+.container > div {
+    min-width: 0;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.container img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.discount-card {
+    grid-column: 1;
+    grid-row: 1;
+    height: 202px;
+}
+
+.urbanist-card {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.building-card {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.green-phone {
+    grid-column: 4;
+    grid-row: 1 / span 2;
+    height: 295px;
+}
+
+.phone-screen {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.logo-card {
+    grid-column: 2 / span 2;
+    grid-row: 2;
+}
+
+.billboard-card {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+}
+
+.slogan-card {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.bottle-card {
+    grid-column: 4;
+    grid-row: 2 / span 2;
+    height: 329px;
+    align-self: end;
+}
